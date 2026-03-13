@@ -27,10 +27,10 @@ function App() {
 
       {/* --- MAIN CONTAINER --- */}
       <div className="max-w-6xl mx-auto p-4 lg:p-8">
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 lg:items-start">
           
           {/* --- LEFT SIDEBAR --- */}
-          <aside className="lg:w-1/3 w-full">
+          <aside className="lg:w-1/3 w-full lg:sticky lg:top-10">
             <Sidebar />
           </aside>
 
@@ -117,7 +117,7 @@ function App() {
                               <span className="text-gray-500">{skill.level}</span>
                             </div>
                             <div className="h-1.5 w-full bg-[#1D1D1D] rounded-full overflow-hidden border border-white/5">
-                              <div className="h-full bg-linear-to-r from-[#FA5252] to-[#DD2476] transition-all duration-1000" style={{ width: animateSkills ? skill.level : '0%' }}></div>
+                              <div className="h-full bg-gradient-to-r from-[#FA5252] to-[#DD2476] transition-all duration-1000" style={{ width: animateSkills ? skill.level : '0%' }}></div>
                             </div>
                           </div>
                         ))}
@@ -172,7 +172,7 @@ function App() {
                             <label className="text-[10px] text-gray-500 uppercase font-bold ml-1">Message</label>
                             <textarea rows="4" placeholder="How can I help you?" className="w-full bg-[#111111] border border-white/5 rounded-xl p-4 text-xs focus:outline-none focus:border-[#EF4444]/50 focus:ring-1 focus:ring-[#EF4444]/20 transition-all resize-none text-white"></textarea>
                           </div>
-                          <button type="button" className="w-full bg-linear-to-r from-[#FA5252] to-[#DD2476] py-4 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:opacity-90 hover:shadow-[0_0_20px_rgba(239,68,68,0.3)] transition-all active:scale-95 text-white">
+                          <button type="button" className="w-full bg-gradient-to-r from-[#FA5252] to-[#DD2476] py-4 rounded-2xl font-black text-[10px] uppercase tracking-widest hover:opacity-90 hover:shadow-[0_0_20px_rgba(239,68,68,0.3)] transition-all active:scale-95 text-white">
                             Send Message
                           </button>
                         </form>

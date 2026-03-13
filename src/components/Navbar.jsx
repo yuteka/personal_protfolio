@@ -19,8 +19,8 @@ const Navbar = ({ activeTab, setActiveTab }) => {
             onClick={() => setActiveTab(link.name)} // CLICK LOGIC
             className={`flex flex-col items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-lg transition-all duration-300 group
               ${activeTab === link.name 
-                ? 'bg-linear-to-r from-[#FA5252] to-[#DD2476] text-white shadow-lg' 
-                : 'bg-[#212425] text-[#A6A6A6] hover:text-white hover:bg-linear-to-r hover:from-[#FA5252] hover:to-[#DD2476]'
+                ? 'bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-white shadow-lg' 
+                : 'bg-[#212425] text-[#A6A6A6] hover:text-white hover:bg-gradient-to-r hover:from-[#FA5252] hover:to-[#DD2476]'
               }`}
           >
             <span className="mb-1 group-hover:scale-110 transition-transform">
